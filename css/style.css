@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+body {
+	background: #dcdcdc;
+}
+
+#container {
+	margin: 0 auto;
+	background: white;
+	max-width: 1200px;
+}
+
+header {
+	background: white;
+	background-image: url(../img/header.jpg);
+}
+
+header img {
+	width: 160px;
+	padding-left: 2em;
+}
+
+header h1 {
+	font-family: 'Jolly Lodger', cursive;
+	font-size: 70px;
+	margin: 0 auto;
+	padding-left: 5em;
+	color: #ffffff;
+}
+
+nav {
+	background: rgb(31, 49, 61);
+}
+
+aside {
+	min-width: 370px;
+}
+
+footer {
+	background: rgb(55, 128, 147);
+	min-height: 200px;
+}
+
+
+/* TIPOGRAFIA ETIQUETAS */
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding-left: 1em;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	padding-left: 1em;
+	font-weight: bold 900;
+	font-size: x-large;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold 900;
+	font-size: 1.3em;
+	margin-left: 1.2em;
+}
+
+footer h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 1.0em;
+	margin-left: 0.2em;
+}
+
+h4 {
+	color: #080808;
+	font-family: 'Lato', sans-serif;
+	font-size: normal;
+	font-weight: 100;
+	font-style: normal;
+	line-height: initial;
+	margin-top: 1em;
+}
+
+h5 {
+	color: #080808;
+	font-family: 'Lato', sans-serif;
+	font-size: bold;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+
+span {
+	color: #6a98e7;
+}
+
+ul {
+	margin-right: 5em;
+}
+
+li {
+	list-style: none;
+	padding: 0.5em 0.7em;
+	font-size: 1.2em;
+}
+
+li a {
+	color: #fcfcfc;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #5CD3EB;
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #5CD3EB;
+}
+
+footer p {
+	font-size: small;
+}
+
+
+/* TIPOGRAFIA CLASES */
+
+.text_ico_tit {
+	font-size: x-small;
+	color: black;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	padding: 0.1em;
+	margin: 0;
+}
+
+.text_ico {
+	font-size: normal;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding: 0.1em;
+	margin: 0;
+}
+
+
+
+/* MODELO DE CAJA */
+
+.flex {
+	display: flex;
+}
+
+.flex_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex_col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexgrow1 {
+	flex-grow: 1;
+}
+
+.flexgrow2 {
+	flex-grow: 2;
+}
+
+.flexgrow3 {
+	flex-grow: 3;
+}
+
+.flex_central {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.flex-grid {
+	display: flex;
+	margin: auto -1rem 1rem;
+}
+
+.col {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	padding: 1rem;
+}
+
+.sidebar {
+	flex: 1;
+}
+
+.main {
+	flex: 3;
+}
+
+.contenedor {
+	margin-top: 1em;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: .5rem .8rem;
+	justify-items: stretch;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #cfc9c9;
+}
+
+.contgrid {
+	margin-top: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: .5rem .8rem;
+	justify-items: stretch;
+	padding-bottom: 1em;
+	color: white;
+}
+
+.item {
+	border: 1px solid #e4e3e3;
+	padding: 0.3rem;
+}
+
+.item2 {
+	background: url(../img/comillas.jpg) top left no-repeat;
+	padding: 1rem;
+}
+
+.item3 {
+	background: url(../img/comillas.jpg) top left no-repeat;
+	padding: 0;
+	margin: 0;
+}
+
+/* ESTILOS CAJAS */
+
+#img_responsive {
+	width: 100%;
+	height: auto;
+}
+
+#iconos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+
+
+/* BOTONES  */
+
+.btn_peque {
+	display: inline;
+	font-size: small;
+	color: rgb(7, 7, 7);
+	text-align: center;
+	background-color: #f3eded;
+	padding: .175rem .55rem;
+	margin: 1.5em 0.8em;
+	border-radius: .25rem;
+	outline: 0;
+	cursor: pointer;
+	border: none;
+}
+
+.btn_peque2 {
+	font-size: xx-small;
+	display: inline-block;
+	outline: 0;
+	padding: 5px 8px;
+	margin-left: 2em;
+	overflow: hidden;
+	color: rgb(68, 189, 245);
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	border: 1px solid #6ac8ff;
+	border-radius: .35rem;
+}
+
+input#search {
+	width: 170px;
+	height: 30px;
+	background: #2a3e4b;
+	border: none;
+	font-size: 10pt;
+	color: #262626;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: rgb(250, 246, 246);
+	border: 1px solid #fdfdfd;
+}
+
+input#search::-webkit-input-placeholder {
+	color: #02243d;
+}
+
+input#search:-moz-placeholder {
+	/* Firefox 18- */
+	color: #02243d;
+}
+
+input#search::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #02243d;
+}
+
+input#search:-ms-input-placeholder {
+	color: #02243d;
+}
+
+.icon {
+	margin-left: 17px;
+	margin-top: 17px;
+	z-index: 1;
+	color: #eaeef1;
+	-webkit-transition: all .55s ease;
+	-moz-transition: all .55s ease;
+	-ms-transition: all .55s ease;
+	-o-transition: all .55s ease;
+	transition: all .55s ease;
+}
+
+
+.text {
+	font-size: 12px;
+	padding: 1em;
+}
+
+.mfleft {
+	float: left;
+	width: 100px;
+	height: 140px;
+	border: 1px solid #dcdcdc;
+	margin: 1em;
+}
+
+.avatar {
+	display: flex;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.imgresponsive {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+.resel {
+	font-size: xx-small;
+	color: rgb(141, 141, 141);
+	margin-left: 5em;
+	padding-left: 2em;
+	display: block;
+}
+
+.botones {
+	height: 20px;
+	margin-left: 2em;
+}
+
+.icoitem {
+	width: 15px;
+	height: 15px;
+	margin-right: 5em;
+}
+
+.star {
+	height: 30px;
+	display: block;
+	margin-top: 2em;
+	margin-left: 4em;
+}
+
+.icostar {
+	width: 15px;
+	height: 15px;
+	margin-left: 0.1em;
+}
+
+.imgmain {
+	border-radius: 3rem;
+	margin-right: 2em;
+}
+
+.foosup {
+	background: #67abbc;
+	min-height: 20px;
+}
+
+.fooinf {
+	background: rgb(1, 41, 44);
+	min-height: 20px;
+}
+
+.itemfoo {
+	padding: 0.3rem;
+}
+
+.itemfoo1 {
+	padding: 0.3rem 0.3em 0.3rem 6.3em;
+}
+
+.iconfoo {
+	margin: 17px 10px 1px 17px;
+	z-index: 1;
+	color: #eaeef1;
+	font-size: large;
+}
+
+.iconrss {
+	margin: 17px 10px 1px 1px;
+	z-index: 1;
+	color: #eaeef1;
+	font-size: 2rem;
+	display: inline;
+}
+
+.rssp {
+	color: black;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	font-weight: 700;
+}
+
+.foolink {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.justif {
+	text-align: justify;
+	max-width: 80%;
+}
